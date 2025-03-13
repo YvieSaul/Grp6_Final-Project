@@ -5,7 +5,7 @@ import requests
 
 app = Flask(__name__)
 
-TRIPADVISOR_API_KEY = "F0D63E0095E24194B746064DF0E03A95"
+TRIPADVISOR_API_KEY = "YOUR KEY"
 
 # ==========================
 # Load Model & Data
@@ -64,7 +64,7 @@ def get_city_image_url(city):
     """
     Fetches an image URL of the city using the Pexels API.
     """
-    PEXELS_ACCESS_KEY = "vr1ESazX0zv5JqWyRLfWGt4fxjKlT27LQuzew8wgbGQmenPzK1TW3RvO"  # actual API key
+    PEXELS_ACCESS_KEY = "YOUR KEY"  # actual API key
     search_url = "https://api.pexels.com/v1/search"
     headers = {"Authorization": PEXELS_ACCESS_KEY}
     params = {"query": city, "per_page": 1}
